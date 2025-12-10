@@ -1,0 +1,36 @@
+= claim-forge - Citation Guide
+:toc:
+
+== BibTeX
+
+[source,bibtex]
+----
+@software{claim-forge_2025,
+  author = {Polymath, Hyper},
+  title = {claim-forge},
+  year = {2025},
+  url = {https://github.com/hyperpolymath/claim-forge},
+  license = {AGPL-3.0-or-later}
+}
+----
+
+== Harvard Style
+
+Polymath, H. (2025) _claim-forge_ [Computer software]. Available at: https://github.com/hyperpolymath/claim-forge
+
+== OSCOLA
+
+Hyper Polymath, 'claim-forge' (2025) <https://github.com/hyperpolymath/claim-forge>
+
+== MLA
+
+Polymath, Hyper. "claim-forge." 2025, github.com/hyperpolymath/claim-forge.
+
+== APA 7
+
+Polymath, H. (2025). _claim-forge_ [Computer software]. GitHub. https://github.com/hyperpolymath/claim-forge
+
+== See Also
+
+* link:../CITATION.cff[CITATION.cff]
+* link:../codemeta.json[codemeta.json]
