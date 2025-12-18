@@ -1,5 +1,6 @@
 # Claim Forge - Container Image
 # IP registration and timestamping system
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 FROM fedora:latest
 
@@ -26,13 +27,13 @@ RUN pip3 install --no-cache-dir opentimestamps-client
 # Create application directory
 WORKDIR /app
 
-# Copy source code
+# Copy source code and build files
 COPY src/ /app/src/
 COPY Makefile /app/
 COPY claim-forge.gpr /app/
 
-# Build the application
-RUN make clean && make release
+# Create required directories and build the application
+RUN mkdir -p bin obj && make release
 
 # Create directory for claims
 RUN mkdir -p /workspace
