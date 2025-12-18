@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
 name: Ada (GNAT)
 
 on:
@@ -6,19 +7,22 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions: read-all
+
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
     - name: Set up GNAT toolchain
-      run: >
-        sudo apt-get update &&
-        sudo apt-get install gnat gprbuild
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y gnat gprbuild
 
     - name: Build
       run: gprbuild -j0 -p
