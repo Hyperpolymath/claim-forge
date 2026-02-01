@@ -1,4 +1,4 @@
-;; SPDX-License-Identifier: AGPL-3.0-or-later
+;; SPDX-License-Identifier: MPL-2.0-or-later
 ;; ECOSYSTEM.scm - Ecosystem position for claim-forge
 ;; Media-Type: application/vnd.ecosystem+scm
 
@@ -34,7 +34,7 @@
      (relationship "sibling-standard")
      (description "Key management and identity verification")
      (integration "Potential GPG key lifecycle management"))
-    ((name "palimpsest-licence")
+    ((name "palimpsest-license")
      (relationship "sibling-standard")
      (description "Attribution-preserving copyleft license")
      (integration "Dual licensing option for claim-forge users"))
